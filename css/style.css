@@ -1,1 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.notes {
+    display: flex;
+    height: 100%;
+}
+
+.notes * {
+    font-family: 'Urbanist', sans-serif;
+}
+
+.notes-sidebar {
+    border-right: 2px solid #111;
+    flex-shrink: 0;
+    overflow-y: auto;
+    padding: 1em;
+    width: 300px;
+}
+
+.notes-add {
+    background: blue;
+    border: none;
+    border-radius: 3px;
+    color: #eee;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+}
+
+.notes-add:hover {
+    background: darkblue;
+}
+
+.notes-list-item {
+    cursor: pointer;
+}
+
